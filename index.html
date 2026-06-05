@@ -36,6 +36,8 @@
             padding: 0;
             box-sizing: border-box;
         }
+                    scroll-behavior: smooth;
+            transition: all 0.3s ease;
         
         body {
             font-family: var(--font-sans);
@@ -148,9 +150,16 @@
             border-radius: 8px;
             padding: 1.5rem;
             margin-bottom: 1.5rem;
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+                .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
         }
         
         .btn {
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: inline-block;
             padding: 0.625rem 1.25rem;
             background: var(--accent);
@@ -164,6 +173,8 @@
         
         .btn:hover {
             opacity: 0.9;
+                        transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
         
         .btn-secondary {
@@ -379,7 +390,7 @@
             <p>Open to graduate SOC analyst, junior cyber security analyst, and UK security graduate scheme opportunities. Let's connect.</p>
             <div class="contact-links">
                 <a href="mailto:im.samdesai@gmail.com">📧 im.samdesai@gmail.com</a>
-                <a href="https://www.ldin/in/samarthdesai-cybersecurity" target="_blank">💼 LinkedIn</a>
+                <a href="https://www.linkedin.com/in/samarth-desai-cybersecurity
                 <a href="https://github.com/Sammm03" target="_blank">💻 GitHub</a>
                 <a href="https://instagram.com/ll_sam_ll_03" target="_blank">📸 Instagram</a>
             </div>
