@@ -57,10 +57,6 @@ body {
 
 /* ─── Top bar ─── */
 .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -337,4 +333,237 @@ h2 {
 
 <!-- Top bar -->
 <div class="topbar">
-  <a class="wordmark" href="#" style="font-size: 1.5rem; font-weight: 800;">sd.</a>
+  <a class="wordmark" href="#">sd.</a>
+  <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">○</button>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+  <h1 class="reveal">Learning to detect threats<br>before they become incidents.</h1>
+  <p class="tagline reveal" style="transition-delay:.1s">I'm Samarth Desai — a Cyber Security graduate with First Class Honours from the University of Hertfordshire. I focus on practical detection engineering: anomaly systems, analyst dashboards, and privacy-first architecture that holds up in production.</p>
+</div>
+
+<!-- Work -->
+<div class="section" id="work">
+  <h2 class="reveal">Work</h2>
+  <div class="list">
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Shift Manager — Blue Ginger</span>
+        <span class="item-meta">Apr 2023 — Present</span>
+      </div>
+      <p class="item-body">Primary escalation point for operational incidents across 8+ staff — coordinating real-time cross-functional response directly analogous to SOC Tier 1 triage. Led incident resolution under pressure, onboarded 5+ team members on compliance procedures, and maintained financial audit trails mirroring IT asset governance disciplines.</p>
+      <div class="tags">
+        <span class="tag">Incident triage</span>
+        <span class="tag">Escalation</span>
+        <span class="tag">Team leadership</span>
+        <span class="tag">Audit trails</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Front of House — Busaba</span>
+        <span class="item-meta">Jan 2023 — Mar 2023</span>
+      </div>
+      <p class="item-body">Customer-facing operations in a high-volume restaurant environment. Communication, adaptability, and team coordination under pressure.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Projects -->
+<div class="section" id="projects">
+  <h2 class="reveal">Projects</h2>
+  <div class="list">
+
+    <div class="item">
+      <div class="item-head">
+        <span class="proj-name">KeyWatch — Keystroke Behaviour &amp; Anomaly Detection</span>
+        <span class="item-meta">Security Engineering · Jan — May 2025</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="stat-n">92%</span><span class="stat-l">Precision</span></div>
+        <div class="stat"><span class="stat-n">89%</span><span class="stat-l">Recall</span></div>
+        <div class="stat"><span class="stat-n">5k+</span><span class="stat-l">Labelled samples</span></div>
+        <div class="stat"><span class="stat-n">&lt;12s</span><span class="stat-l">Dashboard latency</span></div>
+      </div>
+      <div class="proj-img">
+        <img src="./assets/keywatch-dashboard.png" alt="KeyWatch analyst dashboard — keystroke timeline and anomaly detection scatter plot" loading="lazy">
+        <p class="proj-img-cap">Real-time analyst dashboard — keystroke timeline, anomaly scatter plot, configurable sensitivity thresholds.</p>
+      </div>
+      <p class="item-body">Real-time keystroke anomaly detection using Isolation Forest trained on 5,000+ labelled samples. Reduced I/O latency ~40% via MinMaxScaler normalisation and a 10-minute rolling-window retraining pipeline. Consistently below 12s latency on consumer hardware (avg CPU 33.35%). Privacy-by-design throughout — local-only storage, anonymised timestamps, least-privilege file permissions — fully compliant with GDPR Articles 5, 25, and 32.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">scikit-learn</span>
+        <span class="tag">Isolation Forest</span>
+        <span class="tag">Dash</span>
+        <span class="tag">Plotly</span>
+        <span class="tag">pynput</span>
+        <span class="tag">UEBA</span>
+        <span class="tag">GDPR</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="proj-name">Parcel Depot Management System</span>
+        <span class="item-meta">Java Application · Oct — Dec 2024</span>
+      </div>
+      <p class="item-body">Production-structured Java application with RBAC across 5 class roles, enforcing least-privilege access aligned with ISO 27001. Automated audit trail generation mirrors SIEM logging requirements. Swing GUI with colour-coded statuses and dynamic reporting. 31 iterative commits with disciplined version-control workflow.</p>
+      <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">Swing</span>
+        <span class="tag">MVC</span>
+        <span class="tag">RBAC</span>
+        <span class="tag">ISO 27001</span>
+        <span class="tag">Git</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="proj-name">Multi-Site Network Design &amp; Linux Configuration</span>
+        <span class="item-meta">Network Security · Sep — Dec 2024</span>
+      </div>
+      <p class="item-body">Dual-site enterprise network for London and Manchester using Cisco 2911 routers and Catalyst 2960 switches. IPv4/IPv6 dual-stack with 27 subnets and /64 prefixes per site. Evaluated MPLS, leased lines, and broadband against real business requirements. Ubuntu in VMware with role-segmented accounts, least-privilege Linux permissions, and documented security-first architecture decisions throughout.</p>
+      <div class="tags">
+        <span class="tag">Cisco Packet Tracer</span>
+        <span class="tag">Ubuntu / VMware</span>
+        <span class="tag">IPv4/IPv6</span>
+        <span class="tag">OSPF</span>
+        <span class="tag">MPLS</span>
+        <span class="tag">ifconfig · nmcli</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- About -->
+<div class="section" id="about">
+  <h2 class="reveal">About me</h2>
+  <p class="prose reveal" style="transition-delay:.07s">I'm a cyber security graduate who cares about building things that hold up in the real world — not just demos. My final-year project, KeyWatch, puts UEBA logic and machine learning into a deployable detection system with genuine production metrics: 92% precision, 89% recall, GDPR-compliant by design from day one.</p>
+  <p class="prose reveal" style="transition-delay:.13s">Beyond the technical side, I've spent 3+ years managing operational teams through real-time incidents — the same escalation discipline, composure under pressure, and structured triage that a SOC analyst relies on every shift.</p>
+  <p class="prose reveal" style="transition-delay:.19s">I'm actively looking for graduate SOC analyst roles, junior cyber security analyst positions, and UK security graduate schemes — on-site, hybrid, or remote.</p>
+</div>
+
+<!-- Education -->
+<div class="section" id="education">
+  <h2 class="reveal">Education</h2>
+  <div class="list">
+    <div class="item">
+      <p class="edu-degree">BSc (Hons) Computer Science — Cyber Security &amp; Networks</p>
+      <p class="edu-where">University of Hertfordshire &nbsp;·&nbsp; 2022 – 2025 &nbsp;·&nbsp; <strong style="color:var(--text);font-weight:500">First Class Honours</strong></p>
+      <p class="item-body">Specialised in threat detection, vulnerability management, malware analysis, secure network design, and security operations. Covered MITRE ATT&CK, SIEM/UEBA, ISO 27001/GDPR compliance, and hands-on security tool development.</p>
+      <div class="tags">
+        <span class="tag">MITRE ATT&CK</span>
+        <span class="tag">SIEM / UEBA</span>
+        <span class="tag">ISO 27001</span>
+        <span class="tag">GDPR</span>
+        <span class="tag">Malware Analysis</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Skills -->
+<div class="section" id="skills">
+  <h2 class="reveal">Skills</h2>
+  <div class="skills-grid reveal" style="transition-delay:.09s">
+    <div>
+      <p class="sg-label">Security</p>
+      <div class="sg-list">
+        <span>SOC Analysis &amp; UEBA</span>
+        <span>Anomaly Detection</span>
+        <span>Malware Analysis</span>
+        <span>Vulnerability Management</span>
+        <span>MITRE ATT&CK</span>
+        <span>Incident Response</span>
+        <span>OWASP Top 10</span>
+        <span>Behavioural Biometrics</span>
+      </div>
+    </div>
+    <div>
+      <p class="sg-label">Engineering</p>
+      <div class="sg-list">
+        <span>Python</span>
+        <span>Java · Bash</span>
+        <span>scikit-learn · Dash · Plotly</span>
+        <span>Wireshark · SolarWinds NPM</span>
+        <span>Cisco Packet Tracer</span>
+        <span>Linux (Ubuntu)</span>
+        <span>Git · VMware</span>
+        <span>IPv4/IPv6 · MPLS</span>
+      </div>
+    </div>
+    <div>
+      <p class="sg-label">Frameworks</p>
+      <div class="sg-list">
+        <span>NIST SP 800-61r2</span>
+        <span>ISO/IEC 27001</span>
+        <span>GDPR Arts. 5/25/32</span>
+        <span>Privacy-by-Design</span>
+        <span>Least-Privilege Design</span>
+        <span>RBAC · MVC</span>
+      </div>
+    </div>
+    <div>
+      <p class="sg-label">Soft skills</p>
+      <div class="sg-list">
+        <span>Incident prioritisation</span>
+        <span>Escalation protocols</span>
+        <span>Cross-team coordination</span>
+        <span>Pressure management</span>
+        <span>Security documentation</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Connect -->
+<div class="connect" id="contact">
+  <h2 class="reveal">Let's connect</h2>
+  <p class="connect-blurb reveal" style="transition-delay:.08s">Open to graduate SOC analyst, junior cyber security analyst, and UK security graduate scheme roles — London-based, happy with on-site, hybrid, or remote.</p>
+  <div class="connect-links reveal" style="transition-delay:.16s">
+    <a href="./assets/Resume_Samarth_Desai.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="mailto:im.samdesai@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/samarthdesai-cybersecurity" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/Sammm03" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://instagram.com/ll_sam_ll_03" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <p class="copy reveal" style="transition-delay:.24s">© 2025 Samarth Desai</p>
+</div>
+
+<script>
+  /* ── Theme ── */
+  const btn  = document.getElementById('themeBtn');
+  const body = document.body;
+  const saved = localStorage.getItem('sd-theme');
+  const dark = saved ? saved === 'dark' : false;  body.dataset.theme = dark ? 'dark' : 'light';  btn.textContent    = dark ? '●' : '○';
+
+  btn.addEventListener('click', () => {
+    const next = body.dataset.theme === 'dark' ? 'light' : 'dark';
+    body.dataset.theme = next;
+    btn.textContent    = next === 'dark' ? '●' : '○';
+    localStorage.setItem('sd-theme', next);
+  });
+
+  /* ── Scroll reveal ── */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.07 });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* Stagger list items */
+  document.querySelectorAll('.item').forEach((el, i) => {
+    el.style.transitionDelay = (i % 4 * 0.08) + 's';
+    io.observe(el);
+  });
+</script>
+</body>
+</html>
